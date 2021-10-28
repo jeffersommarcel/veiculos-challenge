@@ -35,6 +35,12 @@ npm install
 
 ```
 
+Execute o comando para iniciar development server do NPM
+```
+npm run dev
+
+```
+
 Execute o comando para iniciar development server do Laravel
 
 ```
@@ -42,8 +48,3 @@ php artisan serve
 
 ```
 
-Execute o comando para iniciar development server do NPM
-```
-npm run dev
-
-```
