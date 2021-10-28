@@ -55,7 +55,6 @@
 </script>
 
 <style lang="scss">
-    // Variaveis globais
     $background: #ffffff;
     $background-white: #fcfdff;
     $main-shadow: rgba(17, 17, 16, 0.1) 0px 0px 16px;
@@ -63,7 +62,6 @@
     $color-2:#00bce7;
     $color-h1: #1b1e3d;
 
-    // Configurações globais
     body {
         overflow-x: hidden;
         background: $background-white;
@@ -222,7 +220,7 @@
         width: 200px;
         border-radius:0px;
         transition: 0.4s;
-
+ 
         &:hover{
             background: $color-1;
             color:$color-2;

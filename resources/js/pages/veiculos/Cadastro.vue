@@ -93,7 +93,7 @@
                 this.isLoading = true;
                 axios.post('http://localhost:8000/api/register/veiculo', {
                     veiculo: this.veiculo,
-                    marca: null,
+                    marca: this.marca,
                     ano: this.ano,
                     descricao: this.descricao,
                     vendido: this.vendido
@@ -132,6 +132,9 @@
 </script>
 
 <style lang="scss" scoped>
+    $color-1:#e9eefd;
+    $color-2:#00bce7;
+
     .lead{
         font-size:14px;
     }
@@ -148,7 +151,7 @@
     }
     .col-img{
         padding: 0;
-        border-radius: 10px;
+        border-radius: 10px; 
         img{
             width: 97%;
             height: 100%;
@@ -157,8 +160,20 @@
             border-bottom-right-radius: 10px !important;
         }
     }
+
     .btn-register{
+        background: $color-2;
+        color:$color-1;
         width: 100%;
+        border-radius:0px;
+        transition: 0.4s;
+ 
+        &:hover{
+            background: $color-1;
+            color:$color-2;
+            border: 1px solid $color-2;
+            transition: 0.4s;
+        }
     }
 
     @media only screen and (max-width: 800px) {
